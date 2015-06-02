@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B057DE7-7FCB-4B69-81A1-49F042FDB085}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>view-olv</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(Configuration)\</OutDir>
+    <TargetName>driver</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>driver</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(Configuration)\</OutDir>
+    <TargetName>driver</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>driver</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;DATABASE_PGSQL;HAVE_CONFIG_VC_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\libcommon</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4068;4355;4800;4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)\..\libcommon\lib\common-d.lib;odb-pgsql-d.lib;odb-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;DATABASE_PGSQL;HAVE_CONFIG_VC_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\libcommon</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4068;4355;4800;4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)\..\libcommon\lib64\common-d.lib;odb-pgsql-d.lib;odb-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;DATABASE_PGSQL;HAVE_CONFIG_VC_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\libcommon</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4068;4355;4800;4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)\..\libcommon\lib\common.lib;odb-pgsql.lib;odb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;DATABASE_PGSQL;HAVE_CONFIG_VC_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\libcommon</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4068;4355;4800;4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)\..\libcommon\lib64\common.lib;odb-pgsql.lib;odb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+      <CustomBuild Include="test1.hxx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb test1.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test1.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test1-odb.hxx;test1-odb.ixx;test1-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb test1.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test1.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test1-odb.hxx;test1-odb.ixx;test1-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb test1.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test1.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test1-odb.hxx;test1-odb.ixx;test1-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb test1.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test1.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test1-odb.hxx;test1-odb.ixx;test1-odb.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test2.hxx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb test2.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test2.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test2-odb.hxx;test2-odb.ixx;test2-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb test2.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test2.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test2-odb.hxx;test2-odb.ixx;test2-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb test2.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test2.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test2-odb.hxx;test2-odb.ixx;test2-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb test2.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test2.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test2-odb.hxx;test2-odb.ixx;test2-odb.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test3.hxx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb test3.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test3.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test3-odb.hxx;test3-odb.ixx;test3-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb test3.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test3.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test3-odb.hxx;test3-odb.ixx;test3-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb test3.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test3.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test3-odb.hxx;test3-odb.ixx;test3-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb test3.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test3.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test3-odb.hxx;test3-odb.ixx;test3-odb.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test4.hxx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb test4.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test4.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test4-odb.hxx;test4-odb.ixx;test4-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb test4.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test4.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test4-odb.hxx;test4-odb.ixx;test4-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb test4.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test4.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test4-odb.hxx;test4-odb.ixx;test4-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb test4.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test4.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test4-odb.hxx;test4-odb.ixx;test4-odb.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test5.hxx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb test5.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test5.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test5-odb.hxx;test5-odb.ixx;test5-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb test5.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test5.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test5-odb.hxx;test5-odb.ixx;test5-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb test5.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test5.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test5-odb.hxx;test5-odb.ixx;test5-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb test5.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test5.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test5-odb.hxx;test5-odb.ixx;test5-odb.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test6.hxx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb test6.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test6.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test6-odb.hxx;test6-odb.ixx;test6-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb test6.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test6.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test6-odb.hxx;test6-odb.ixx;test6-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb test6.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test6.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test6-odb.hxx;test6-odb.ixx;test6-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb test6.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test6.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test6-odb.hxx;test6-odb.ixx;test6-odb.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test7.hxx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb test7.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test7.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test7-odb.hxx;test7-odb.ixx;test7-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb test7.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test7.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test7-odb.hxx;test7-odb.ixx;test7-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb test7.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test7.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test7-odb.hxx;test7-odb.ixx;test7-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb test7.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test7.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test7-odb.hxx;test7-odb.ixx;test7-odb.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test8.hxx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb test8.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test8.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test8-odb.hxx;test8-odb.ixx;test8-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb test8.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test8.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test8-odb.hxx;test8-odb.ixx;test8-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb test8.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test8.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test8-odb.hxx;test8-odb.ixx;test8-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb test8.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test8.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test8-odb.hxx;test8-odb.ixx;test8-odb.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test9.hxx">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb test9.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test9.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test9-odb.hxx;test9-odb.ixx;test9-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb test9.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test9.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test9-odb.hxx;test9-odb.ixx;test9-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb test9.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test9.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test9-odb.hxx;test9-odb.ixx;test9-odb.cxx;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb test9.hxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">odb.exe --std c++11 --database pgsql --generate-schema --generate-query --table-prefix t_view_olv_ -DHAVE_CONFIG_VC_H -DODB_MSC_VER=1600 -I$(SolutionDir)\..\libcommon test9.hxx</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test9-odb.hxx;test9-odb.ixx;test9-odb.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test1-odb.hxx" />
+    <ClInclude Include="test1-odb.ixx" />
+    <ClInclude Include="test2-odb.hxx" />
+    <ClInclude Include="test2-odb.ixx" />
+    <ClInclude Include="test3-odb.hxx" />
+    <ClInclude Include="test3-odb.ixx" />
+    <ClInclude Include="test4-odb.hxx" />
+    <ClInclude Include="test4-odb.ixx" />
+    <ClInclude Include="test5-odb.hxx" />
+    <ClInclude Include="test5-odb.ixx" />
+    <ClInclude Include="test6-odb.hxx" />
+    <ClInclude Include="test6-odb.ixx" />
+    <ClInclude Include="test7-odb.hxx" />
+    <ClInclude Include="test7-odb.ixx" />
+    <ClInclude Include="test8-odb.hxx" />
+    <ClInclude Include="test8-odb.ixx" />
+    <ClInclude Include="test9-odb.hxx" />
+    <ClInclude Include="test9-odb.ixx" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="driver.cxx" />
+    <ClCompile Include="test1-odb.cxx" />
+    <ClCompile Include="test2-odb.cxx" />
+    <ClCompile Include="test3-odb.cxx" />
+    <ClCompile Include="test4-odb.cxx" />
+    <ClCompile Include="test5-odb.cxx" />
+    <ClCompile Include="test6-odb.cxx" />
+    <ClCompile Include="test7-odb.cxx" />
+    <ClCompile Include="test8-odb.cxx" />
+    <ClCompile Include="test9-odb.cxx" />
+
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

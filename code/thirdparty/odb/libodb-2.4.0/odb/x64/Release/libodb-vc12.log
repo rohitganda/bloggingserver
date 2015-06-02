@@ -1,0 +1,73 @@
+﻿Build started 3/1/2015 10:21:42 PM.
+     1>Project "C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-2.4.0\odb\libodb-vc12.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.. /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D LIBODB_DYNAMIC_LIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /wd4355 /wd4800 /wd4290 /wd4251 /errorReport:prompt callback.cxx exceptions.cxx database.cxx "vector-impl.cxx" connection.cxx "lazy-ptr-impl.cxx" "prepared-query.cxx" "query-dynamic.cxx" result.cxx "schema-catalog.cxx" section.cxx session.cxx statement.cxx "statement-processing.cxx" tracer.cxx transaction.cxx
+         callback.cxx
+         exceptions.cxx
+         database.cxx
+         vector-impl.cxx
+         connection.cxx
+         lazy-ptr-impl.cxx
+         prepared-query.cxx
+         query-dynamic.cxx
+         result.cxx
+         schema-catalog.cxx
+         section.cxx
+         session.cxx
+         statement.cxx
+         statement-processing.cxx
+         tracer.cxx
+         transaction.cxx
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.. /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D LIBODB_DYNAMIC_LIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\details\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /wd4355 /wd4800 /wd4290 /wd4251 /errorReport:prompt details\buffer.cxx details\condition.cxx details\lock.cxx details\mutex.cxx
+         buffer.cxx
+         condition.cxx
+         lock.cxx
+         mutex.cxx
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.. /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D LIBODB_DYNAMIC_LIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\details\shared-ptr\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /wd4355 /wd4800 /wd4290 /wd4251 /errorReport:prompt "details\shared-ptr\base.cxx"
+         base.cxx
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.. /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D LIBODB_DYNAMIC_LIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\details\win32\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /wd4355 /wd4800 /wd4290 /wd4251 /errorReport:prompt details\win32\init.cxx details\win32\once.cxx details\win32\tls.cxx details\win32\condition.cxx details\win32\thread.cxx details\win32\exceptions.cxx details\win32\dll.cxx
+         init.cxx
+         once.cxx
+         tls.cxx
+         condition.cxx
+         thread.cxx
+         exceptions.cxx
+         dll.cxx
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-2.4.0\odb\..\bin64\odb-2.4-vc12.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\bin64\odb-2.4-vc12.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\lib64\odb.lib" /MACHINE:X64 /DLL x64\Release\callback.obj
+         x64\Release\exceptions.obj
+         x64\Release\database.obj
+         "x64\Release\vector-impl.obj"
+         x64\Release\connection.obj
+         "x64\Release\lazy-ptr-impl.obj"
+         "x64\Release\prepared-query.obj"
+         "x64\Release\query-dynamic.obj"
+         x64\Release\result.obj
+         "x64\Release\schema-catalog.obj"
+         x64\Release\section.obj
+         x64\Release\session.obj
+         x64\Release\statement.obj
+         "x64\Release\statement-processing.obj"
+         x64\Release\tracer.obj
+         x64\Release\transaction.obj
+         x64\Release\\details\buffer.obj
+         x64\Release\\details\condition.obj
+         x64\Release\\details\lock.obj
+         x64\Release\\details\mutex.obj
+         "x64\Release\\details\shared-ptr\base.obj"
+         x64\Release\\details\win32\init.obj
+         x64\Release\\details\win32\once.obj
+         x64\Release\\details\win32\tls.obj
+         x64\Release\\details\win32\condition.obj
+         x64\Release\\details\win32\thread.obj
+         x64\Release\\details\win32\exceptions.obj
+         x64\Release\\details\win32\dll.obj
+            Creating library ..\lib64\odb.lib and object ..\lib64\odb.exp
+         Generating code
+         Finished generating code
+         libodb-vc12.vcxproj -> C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-2.4.0\odb\..\bin64\odb-2.4-vc12.dll
+     1>Done Building Project "C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-2.4.0\odb\libodb-vc12.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:25.97

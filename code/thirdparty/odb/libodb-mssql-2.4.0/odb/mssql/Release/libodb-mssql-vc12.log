@@ -1,0 +1,45 @@
+﻿Build started 3/1/2015 10:28:35 PM.
+     1>Project "C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb\mssql\libodb-mssql-vc12.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\.. /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D LIBODB_MSSQL_DYNAMIC_LIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /wd4355 /wd4800 /wd4290 /wd4251 /wd4267 /analyze- /errorReport:prompt "auto-handle.cxx" connection.cxx "connection-factory.cxx" database.cxx error.cxx exceptions.cxx "prepared-query.cxx" query.cxx "query-dynamic.cxx" "query-const-expr.cxx" "simple-object-statements.cxx" statement.cxx "statement-processing.cxx" "statements-base.cxx" tracer.cxx traits.cxx transaction.cxx "transaction-impl.cxx"
+         auto-handle.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/mssql.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         connection.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/mssql.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         connection-factory.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/connection-factory.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         database.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/mssql.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         error.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/mssql.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         exceptions.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/exceptions.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         prepared-query.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/prepared-query.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         query.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/query.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         query-dynamic.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/query-dynamic.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         query-const-expr.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/query.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         simple-object-statements.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/simple-object-statements.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         statement.cxx
+     1>statement.cxx(8): fatal error C1083: Cannot open include file: 'odb/tracer.hxx': No such file or directory
+         statement-processing.cxx
+     1>statement-processing.cxx(7): fatal error C1083: Cannot open include file: 'odb/statement-processing-common.hxx': No such file or directory
+         statements-base.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/statements-base.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         tracer.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/tracer.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         traits.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/traits.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         transaction.cxx
+     1>C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb/mssql/transaction.hxx(8): fatal error C1083: Cannot open include file: 'odb/pre.hxx': No such file or directory
+         transaction-impl.cxx
+     1>transaction-impl.cxx(5): fatal error C1083: Cannot open include file: 'odb/tracer.hxx': No such file or directory
+     1>Done Building Project "C:\work\code\c++\gTeam\code\thirdparty\odb\libodb-mssql-2.4.0\odb\mssql\libodb-mssql-vc12.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.95

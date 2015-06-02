@@ -1,0 +1,15 @@
+﻿Build started 6/1/2015 11:49:10 PM.
+     1>Project "C:\work\code\c++\bloggingserver\code\JsonServer\JsonServer.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\work\code\c++\bloggingserver\code\BloggerJsonService\packages\cpprestsdk.2.2.0\build\native\include\ /ZI /nologo /W3 /WX- /Od /Oy- /D HAS_CPPRESTSDK /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\work\code\c++\bloggingserver\code\BloggerJsonService\Debug\JsonServer.exe" /INCREMENTAL /NOLOGO C:\work\code\c++\bloggingserver\code\BloggerJsonService\packages\cpprestsdk.2.2.0\build\native\lib\Win32\v120\Debug\Desktop\cpprest120d_2_2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\work\code\c++\bloggingserver\code\BloggerJsonService\Debug\JsonServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\work\code\c++\bloggingserver\code\BloggerJsonService\Debug\JsonServer.lib" /MACHINE:X86 Debug\httpmethodimpl.obj
+         Debug\JsonHttpServer.obj
+         Debug\main.obj
+         JsonServer.vcxproj -> C:\work\code\c++\bloggingserver\code\BloggerJsonService\Debug\JsonServer.exe
+     1>Done Building Project "C:\work\code\c++\bloggingserver\code\JsonServer\JsonServer.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.15
